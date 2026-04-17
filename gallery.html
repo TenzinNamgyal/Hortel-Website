@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<link rel="stylesheet" type="text/css" href="css/gallery.css">	
+</head>
+<body>
+	<header>
+	<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="gallery.html">Gallery</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="about us.html">About</a></li>
+				<li><a href="contact us.html">Contact</a></li>
+				
+			</ul>
+			
+			 <div class="main-content-header">
+                <div class="slider">
+                    <!--image slider start-->
+                    <div class="slides">
+                        <!--radio slider start-->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <input type="radio" name="radio-btn" id="radio5">
+                        
+                        <!--radio slider end-->
+                        <!--slides images start-->
+                        <div class="slide first">
+                            <img src="images/a.jpg" alt="" >
+                        </div>
+                        <div class="slide">
+                            <img src="images/b.jpg" alt="" >
+                        </div>
+                        <div class="slide">
+                         <img src="images/c.jpg" alt="" >
+                     </div>
+                     <div class="slide">
+                         <img src="images/e.jpg" alt="" >
+                     </div>
+                     <div class="slide">
+                         <img src="images/g.jpg" alt="" >
+                    </div>
+                        <!--slides images end-->
+                        <!--automatic nav start-->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                        </div>
+                        <!--automatic nav end-->
+                    </div>
+                </div>
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+                
+         </div>
+         <!--image slider end-->
+         <script type="text/javascript">
+            var counter = 2;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 5)
+                {
+                    counter = 1;
+                }
+            },5000);
+        </script>
+            
+        </header>
+
+	
+</body>
+</html>
